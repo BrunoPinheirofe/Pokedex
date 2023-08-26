@@ -14,6 +14,7 @@
 
     <!-- link css -->
     <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/pokedex.css">
     
     <title>Pokedex</title>
 </head>
@@ -21,18 +22,22 @@
    <section class="content">
     <h1>Pokedex</h1>
 
-    <ol class = "pokemons">
-        <li class="pokemon">
-            <span class="number"></span>
-            Bulbasaur
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="Bulbasaur">
-        </li>
-       
-    </ol>
+
+    <ol id = "pokemonList" class = "pokemons"></ol>
+  
+    <div class="pagination"> 
+        <button id= "loadMoreButton" type="button">
+        More
+        </button>
+        
+</div>
+   
    </section>
 
 
 <!-- link js -->
+<script src="assets/js/pokemon-model.js"></script>
+<script src="assets/js/poke-api.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
